@@ -61,7 +61,6 @@
   <ItemGroup>
     <Compile Include="Dtos\ClosestEstimateDto.cs" />
     <Compile Include="Dtos\EstimateDto.cs" />
-    <Compile Include="Dtos\PharmacyDto.cs" />
     <Compile Include="Dtos\PrescriptionDto.cs" />
     <Compile Include="Dtos\PrescriptionItemDto.cs" />
     <Compile Include="Form1.cs">
