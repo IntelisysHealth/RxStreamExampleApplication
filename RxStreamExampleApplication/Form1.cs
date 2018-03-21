@@ -22,10 +22,7 @@ namespace RxStreamExampleApplication
         private void Form1_Load(object sender, EventArgs e)
         {
             //Prepopulate some default values 
-            txtPresNo1.Text = Guid.NewGuid().ToString();
-            txtPresNo2.Text = Guid.NewGuid().ToString();
-
-            txtClientId.Text = Guid.NewGuid().ToString();
+            ResetGuids();
             txtCustom1.Text = "abc";
             txtCustom2.Text = "123";
 
@@ -37,9 +34,16 @@ namespace RxStreamExampleApplication
 
             txtQty1.Text = "30";
             txtQty2.Text = "60";
-
-            
         }
+
+
+        private void ResetGuids()
+        {
+            txtPresNo1.Text = Guid.NewGuid().ToString();
+            txtPresNo2.Text = Guid.NewGuid().ToString();
+            txtClientId.Text = Guid.NewGuid().ToString();
+        }
+
 
 
         //get the closest Estimate detail
@@ -58,6 +62,8 @@ namespace RxStreamExampleApplication
             //make the magic happen
             ClosestEstimate();
             
+            //reset the Guids so we don't send duplicate requests 
+            ResetGuids();
         }
 
         //get the estimate
@@ -73,7 +79,9 @@ namespace RxStreamExampleApplication
             button1.Enabled = false;
             btnTest.Enabled = false;
             GetEstimateSummary();
-            
+
+            //reset the Guids so we don't send duplicate requests 
+            ResetGuids();
         }
 
         private async void ClosestEstimate()
@@ -123,7 +131,7 @@ namespace RxStreamExampleApplication
             try
             {
                 //Deserialize object
-                var responseList = JsonConvert.DeserializeObject<List<DetailResponseDto>>(restResponse.Content);
+                var responseList = JsonConvert.DeserializeObject<List<ClosestEstimateDto>>(restResponse.Content);
                 dataGridView1.DataSource = responseList;
 
                 txtOutput.Text = restResponse.Content;
@@ -185,7 +193,7 @@ namespace RxStreamExampleApplication
             try
             {
                 //Deserialize object
-                var responseList = JsonConvert.DeserializeObject<List<SummaryResponseDto>>(restResponse.Content);
+                var responseList = JsonConvert.DeserializeObject<List<EstimateDto>>(restResponse.Content);
                 dataGridView1.DataSource = responseList;
 
                 txtOutput.Text = restResponse.Content;
