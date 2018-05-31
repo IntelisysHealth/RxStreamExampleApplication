@@ -1,0 +1,16 @@
+InteliSys Health-RxStream API Terms of Use
+
+Your use of the InteliSys-RxStream API, InteliSys-RxStream API Materials, and InteliSys-RxStream Data may be subject to certain limitations on access, 
+InteliSys-RxStream Data requests, and use as set forth in these API Terms, or as otherwise provided to you. If InteliSys believes that you have 
+attempted to exceed or circumvent these limitations, your ability to use the InteliSys-RxStream API, InteliSys-RxStream API Materials, and 
+InteliSys-RxStream Data may be temporarily or permanently blocked. We may monitor your use of the InteliSys-RxStream API, InteliSys-RxStream API 
+Materials, and InteliSys-RxStream Data to improve the InteliSys-RxStream API or InteliSys-RxStream Services and to ensure compliance with these API 
+Terms. You agree that InteliSys may collect certain use data and information related to your use of the InteliSys-RxStream API, InteliSys-RxStream 
+API Materials, and InteliSys-RxStream Data in connection with your Services (“Usage Data”), and that InteliSys may use such Usage Data for any business 
+purpose, internal or external, including, without limitation, providing enhancements to the InteliSys-RxStream API, InteliSys-RxStream API Materials, 
+or InteliSys-RxStream Services, providing developer of user support, or otherwise.
+
+This API documentation contains confidential and proprietary information protected by trade secret and copyright law. This API documentation, the 
+information in this document, and all rights thereto are the sole and exclusive property of InteliSys Health, LLC, are intended for use by customers 
+and employees of InteliSys Health, LLC and others authorized in writing by InteliSys Health, LLC, and are not to be copied, used, or disclosed, or 
+disseminated to anyone else, in whole or in part, without the express written consent and permission of InteliSys Health, LLC. 
